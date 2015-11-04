@@ -30,19 +30,19 @@ Copyright (c) 2014年 timliu: 9925124@qq.com . All rights reserved.
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef enum iToastGravity {
+typedef enum {
 	iToastGravityTop = 1000001,
 	iToastGravityBottom,
 	iToastGravityCenter
 }iToastGravity;
 
-enum iToastDuration {
+typedef enum {
 	iToastDurationLong = 10000,
 	iToastDurationShort = 1000,
 	iToastDurationNormal = 3000
 }iToastDuration;
 
-typedef enum iToastType {
+typedef enum {
 	iToastTypeInfo = -100000,
 	iToastTypeNotice,
 	iToastTypeWarning,
