@@ -21,7 +21,7 @@
 		0FB232221959CAFA007CF501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB232041959CAF9007CF501 /* UIKit.framework */; };
 		0FB2322A1959CAFA007CF501 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FB232281959CAFA007CF501 /* InfoPlist.strings */; };
 		0FB2322C1959CAFA007CF501 /* iToast_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2322B1959CAFA007CF501 /* iToast_iosTests.m */; };
-		0FB232381959CB44007CF501 /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB232371959CB44007CF501 /* iToast.m */; };
+		212321EE1BE9E57D004AAB40 /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 212321ED1BE9E57D004AAB40 /* iToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		0FB232271959CAFA007CF501 /* iToast_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iToast_iosTests-Info.plist"; sourceTree = "<group>"; };
 		0FB232291959CAFA007CF501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FB2322B1959CAFA007CF501 /* iToast_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iToast_iosTests.m; sourceTree = "<group>"; };
-		0FB232361959CB44007CF501 /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
-		0FB232371959CB44007CF501 /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		212321EC1BE9E57D004AAB40 /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		212321ED1BE9E57D004AAB40 /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,7 @@
 		0FB231F41959CAF9007CF501 = {
 			isa = PBXGroup;
 			children = (
+				212321EB1BE9E57D004AAB40 /* Classes */,
 				0FB232061959CAF9007CF501 /* iToast_ios */,
 				0FB232251959CAFA007CF501 /* iToast_iosTests */,
 				0FB231FF1959CAF9007CF501 /* Frameworks */,
@@ -115,7 +116,6 @@
 		0FB232061959CAF9007CF501 /* iToast_ios */ = {
 			isa = PBXGroup;
 			children = (
-				0FB232351959CB44007CF501 /* class */,
 				0FB2320F1959CAF9007CF501 /* NMGAppDelegate.h */,
 				0FB232101959CAF9007CF501 /* NMGAppDelegate.m */,
 				0FB232121959CAF9007CF501 /* Main.storyboard */,
@@ -156,13 +156,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0FB232351959CB44007CF501 /* class */ = {
+		212321EB1BE9E57D004AAB40 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0FB232361959CB44007CF501 /* iToast.h */,
-				0FB232371959CB44007CF501 /* iToast.m */,
+				212321EC1BE9E57D004AAB40 /* iToast.h */,
+				212321ED1BE9E57D004AAB40 /* iToast.m */,
 			);
-			path = class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 				0FB2320D1959CAF9007CF501 /* main.m in Sources */,
 				0FB232171959CAF9007CF501 /* NMGViewController.m in Sources */,
 				0FB232111959CAF9007CF501 /* NMGAppDelegate.m in Sources */,
-				0FB232381959CB44007CF501 /* iToast.m in Sources */,
+				212321EE1BE9E57D004AAB40 /* iToast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
