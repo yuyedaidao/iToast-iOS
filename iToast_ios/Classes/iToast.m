@@ -128,7 +128,7 @@ static iToastSettings *sharedSettings = nil;
 	v.backgroundColor = [UIColor colorWithRed:theSettings.bgRed green:theSettings.bgGreen blue:theSettings.bgBlue alpha:theSettings.bgAlpha];
 	v.layer.cornerRadius = theSettings.cornerRadius;
 	
-	UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+	UIWindow *window = [self lastWindow];
 	
 	CGPoint point;
 	
@@ -238,6 +238,20 @@ static iToastSettings *sharedSettings = nil;
     view =  v;
 	
 	[v addTarget:self action:@selector(hideToast:) forControlEvents:UIControlEventTouchDown];
+}
+
+- (UIWindow *)lastWindow
+{
+    NSArray *windows = [UIApplication sharedApplication].windows;
+    for(UIWindow *window in [windows reverseObjectEnumerator]) {
+        
+        if ([window isKindOfClass:[UIWindow class]] &&
+            CGRectEqualToRect(window.bounds, [UIScreen mainScreen].bounds))
+            
+            return window;
+    }
+    
+    return [UIApplication sharedApplication].keyWindow;
 }
 
 - (CGRect)_toastFrameForImageSize:(CGSize)imageSize withLocation:(iToastImageLocation)location andTextSize:(CGSize)textSize {
