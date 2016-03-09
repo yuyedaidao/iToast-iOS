@@ -169,33 +169,33 @@
 
     }else if(btn.tag == 800)
     {
-        iToast *toast = [[iToast alloc] initWithText:@"自定义iToast"];
-        // 透明度
-        [toast setBgAlpha:1.0];
-        // 圆角像素
-        [toast setCornerRadius:10];
-        // 显示时间：毫秒
-        [toast setDuration:5000.0];
-        // 字体大小
-        [toast setFontSize:30.0];
-        // 文字阴影
-        [toast setUseShadow:YES];
-        // 在中间显示
-//        [toast setGravity:iToastGravityCenter];
-        // 在中间显示:再向左偏移，再向下偏移
-        [toast setGravity:iToastGravityCenter offsetLeft:60 offsetTop:80];
-//        toast.iToastTypeError;
-        //显示itoast背景颜色： 0是黑色，红色：0到1之间
-        [toast setBgRed:0.6];
-        //显示itoast背景颜色： 0是黑色，蓝色：0到1之间
-        [toast setBgBlue:0.8];
-        //显示itoast背景颜色： 0是黑色，绿色：0到1之间
-        [toast setBgGreen:0.7];
-        // 设置显示字体颜色：蓝色
-        [toast setFontColor:[UIColor blueColor]];
+//        iToast *toast = [[iToast alloc] initWithText:@"自定义iToast"];
+//        // 透明度
+//        [toast setBgAlpha:1.0];
+//        // 圆角像素
+//        [toast setCornerRadius:10];
+//        // 显示时间：毫秒
+//        [toast setDuration:5000.0];
+//        // 字体大小
+//        [toast setFontSize:30.0];
+//        // 文字阴影
+//        [toast setUseShadow:YES];
+//        // 在中间显示
+////        [toast setGravity:iToastGravityCenter];
+//        // 在中间显示:再向左偏移，再向下偏移
+//        [toast setGravity:iToastGravityCenter offsetLeft:60 offsetTop:80];
+////        toast.iToastTypeError;
+//        //显示itoast背景颜色： 0是黑色，红色：0到1之间
+//        [toast setBgRed:0.6];
+//        //显示itoast背景颜色： 0是黑色，蓝色：0到1之间
+//        [toast setBgBlue:0.8];
+//        //显示itoast背景颜色： 0是黑色，绿色：0到1之间
+//        [toast setBgGreen:0.7];
+//        // 设置显示字体颜色：蓝色
+//        [toast setFontColor:[UIColor blueColor]];
         
         
-        [toast show];
+//        [toast show];
     }
 
 }
